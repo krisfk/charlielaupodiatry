@@ -544,7 +544,7 @@ h3.title {
 }
 
 .service-list .row>div:nth-child(1) .equipment-box {
-    background-image: url('../img/equipment-thumb1.jpg');
+    background-image: url('../img/equipment-thumb5.jpg');
 }
 
 .service-list .row>div:nth-child(2) .equipment-box {
@@ -560,7 +560,7 @@ h3.title {
 }
 
 .service-list .row>div:nth-child(2) .equipment-box-2 {
-    background-image: url('../img/equipment-thumb5.jpg');
+    background-image: url('../img/equipment-thumb1.jpg');
 }
 
 .service-list .service-box h3,
