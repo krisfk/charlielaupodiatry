@@ -1,0 +1,690 @@
+charset "utf-8";
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    font-size: 100%;
+    font: inherit;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    vertical-align: baseline
+}
+
+body {
+    line-height: 1
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+blockquote,
+q {
+    quotes: none
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block
+}
+
+.clear {
+    clear: both
+}
+
+.sticky {}
+
+.bypostauthor {}
+
+.wp-caption {}
+
+.wp-caption-text {}
+
+.gallery-caption {}
+
+.alignright {}
+
+.alignleft {}
+
+.aligncenter {}
+
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important
+}
+
+body {
+    text-decoration: none;
+    margin: 0;
+    width: 100%;
+    font-size: 15px;
+    line-height: 1.5em;
+    font-family: 'Roboto', Helvetica, Arial, STHeitiTC-light, STHeiti, "Microsoft JhengHei", 微軟正黑體, sans-serif !important;
+    font-weight: 300;
+    color: #333;
+}
+
+a,
+a:hover,
+a:visited,
+a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #158585;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .1);
+    margin-bottom: 1px;
+}
+
+.content .content-wrapper {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.content-wrapper p,
+.service-details>div {
+    text-align: justify;
+}
+
+footer .content-wrapper {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.content-wrapper {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+    position: relative;
+}
+
+.content-wrapper h3 {
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+.menu-top-container {
+    position: absolute;
+    bottom: 10px;
+    right: 0px;
+}
+
+.menu-top-container ul {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0;
+}
+
+.menu-top-container ul a {
+    padding: 0 15px;
+    display: block;
+    border-right: 1px solid #EEEEEE;
+    color: #666666;
+    font-size: 1em;
+    line-height: 1em;
+    font-weight: 400;
+}
+
+.menu-top-container ul li:last-child a {
+    border-right: 0;
+}
+
+.address,
+.phone,
+.whatsapp,
+.fax,
+.email,
+.time {
+    padding-left: 25px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.address:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f3c5";
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+}
+
+.phone:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f095";
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+}
+
+.whatsapp:before {
+    font-family: "Font Awesome 5 Brands";
+    content: "\f232";
+    position: absolute;
+    left: 0;
+}
+
+.fax:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f1ac";
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+}
+
+.email:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0e0";
+    position: absolute;
+    left: 0;
+}
+
+.time:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f017";
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+}
+
+.ig:before {
+    font-family: "Font Awesome 5 Brands";
+    content: "\f16d";
+}
+
+.wc:before {
+    font-family: "Font Awesome 5 Brands";
+    content: "\f1d7";
+}
+
+.fb:before {
+    font-family: "Font Awesome 5 Brands";
+    content: "\f09a";
+}
+
+.small-wrapper {
+    max-width: 830px;
+    width: 100%;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.small-wrapper2 {
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+h3.title {
+    font-size: 2.13em;
+    font-weight: 300;
+    line-height: 1.25em;
+    text-align: center;
+    display: table;
+    margin: auto;
+    margin-bottom: 30px;
+    color: #138585;
+    position: relative;
+    font-weight: 300;
+}
+
+.language {
+    font-size: 1em;
+    line-height: 1.5em;
+    color: #666;
+    margin-right: 10px;
+    top: 0;
+    right: 0;
+    position: absolute;
+    color: #148585;
+}
+
+.grey-box {
+    background: #F6F6F6;
+}
+
+.footer-top {
+    background: #333333;
+    color: #fff;
+}
+
+.footer-bottom {
+    background: #000;
+    color: #fff;
+}
+
+.footer-menu {
+    display: flex;
+    padding-left: 0;
+}
+
+.footer-menu li {
+    padding-left: 20px;
+    padding-right: 20px;
+    border-right: 1px solid #fff;
+    line-height: 1em;
+}
+
+.footer-menu li:first-child {
+    padding-left: 0;
+}
+
+.footer-menu li:last-child {
+    padding-right: 0;
+    border-right: 0;
+}
+
+.copyright {
+    font-size: .86em;
+    position: absolute;
+    right: 20px;
+    top: 27px;
+}
+
+
+/* css custom frame ended */
+
+.mobile-logo {
+    display: none;
+}
+
+.banner {
+    width: 100%;
+    height: 500px;
+    background-position: center center;
+    background-size: cover;
+}
+
+.banner .content-wrapper {
+    height: 100%;
+}
+
+.banner-text {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, .35);
+    padding-left: 40px;
+}
+
+.banner-text h3 {
+    font-weight: 300;
+    font-size: 2em;
+}
+
+.banner-text div {
+    font-weight: 500;
+    font-size: 3.2em;
+    line-height: 1.25em;
+}
+
+.green-bg {
+    background-image: url("../img/green-bg.jpg");
+}
+
+.grey-bg {
+    background-image: url("../img/grey-bg.jpg");
+}
+
+.about-charlie-box {
+    background-image: url("../img/index-box1-bg.jpg");
+    width: 100%;
+    height: 250px;
+    position: relative;
+}
+
+.patient-info-box {
+    background-image: url("../img/index-box2-bg.jpg");
+    width: 100%;
+    height: 250px;
+    position: relative;
+}
+
+.desc-box {
+    width: 50%;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.desc-box h3 {
+    font-size: 1.46em;
+    text-align: justify;
+}
+
+.about-charlie-box .desc-box {
+    background: rgba(21, 133, 133, .8);
+    padding: 0 20px;
+}
+
+.patient-info-box .desc-box {
+    background: rgba(172, 172, 157, .8);
+    padding: 0 20px;
+    float: right;
+}
+
+.service-list .service-box {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    margin-bottom: 30px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.service-list .row>div:nth-child(1) .service-box {
+    background-image: url('../img/service-thumb1.jpg');
+}
+
+.service-list .row>div:nth-child(2) .service-box {
+    background-image: url('../img/service-thumb2.jpg');
+}
+
+.service-list .row>div:nth-child(3) .service-box {
+    background-image: url('../img/service-thumb3.jpg');
+}
+
+.service-list .row>div:nth-child(4) .service-box {
+    background-image: url('../img/service-thumb4.jpg');
+}
+
+.service-list .row>div:nth-child(5) .service-box {
+    background-image: url('../img/service-thumb5.jpg');
+}
+
+.service-list .row>div:nth-child(6) .service-box {
+    background-image: url('../img/service-thumb6.jpg');
+}
+
+.service-list .service-box h3 {
+    font-size: 1.2em;
+    line-height: 1.25em;
+    background: rgba(102, 102, 102, .6);
+    padding: 15px;
+    color: #fff;
+    font-weight: 300;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 0;
+}
+
+.footer-title {
+    font-size: 1em;
+    line-height: 1em;
+    border-left: 3px solid #00FFFF;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-calendar {
+    color: #26FFFF;
+    margin-top: 10px;
+}
+
+.footer-calendar i {
+    margin-right: 5px;
+}
+
+.page-banner {
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+
+.page-banner .content-wrapper {
+    height: 100%;
+}
+
+.page-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    font-size: 3.2em;
+    line-height: 1.25em;
+    color: #fff;
+    font-weight: 400;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+}
+
+.about-bg {
+    background-image: url('../img/about-bg-1.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.about-bg-2 {
+    background-image: url('../img/about-bg-2.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.about-bg .content-wrapper,
+.about-bg .content-wrapper .row,
+.about-bg .content-wrapper .row>div {
+    min-height: 400px;
+}
+
+.about-bg h3.title {
+    margin-left: 0;
+    margin-top: 0;
+}
+
+.about-page-box {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: justify;
+}
+
+.content ul {
+    list-style-type: disc;
+    padding-left: 15px;
+}
+
+.info-img>div {
+    margin-bottom: 20px;
+}
+
+.info-img>div img,
+.service-details>div img {
+    width: 100%;
+    height: auto;
+}
+
+.service-details>div {
+    margin-bottom: 30px;
+}
+
+.service-details>div img,
+iframe {
+    margin-bottom: 10px;
+}
+
+iframe {
+    border: 1px solid #ccc !important;
+}
+
+h4 {
+    color: #148585;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.contact-calendar img {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    height: auto;
+}
+
+.grey-color-bg {
+    background: #eee;
+}
+
+.loader-icon,
+.mail-status {
+    display: none;
+    margin-left: 5px;
+}
+
+.loader-icon.active,
+.mail-status.active {
+    display: inline-block;
+}
+
+.loader-icon img {
+    width: 15px;
+    height: 15px;
+}
+
+#applyform .mail-status,
+#applyform .loader-icon {
+    clear: both;
+    margin-left: 0px;
+    margin-top: 10px;
+}
+
+.about-charlie-box a,
+.patient-info-box a,
+.service-box a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.wow {
+    visibility: hidden;
+}
+
+.contact-top-div {
+    position: absolute;
+    top: 23px;
+    right: 10px;
+}

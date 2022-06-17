@@ -1,0 +1,215 @@
+@media (min-width: 992px) and (max-width: 1199px) {
+    .content-wrapper {
+        max-width: 800px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 991px) {
+    .expand-menu-a {
+        display: block !important;
+    }
+    .menu-top-container ul a.expand-menu-a {
+        border-bottom: none !important;
+    }
+    .submenu li a {
+        padding: 0.5rem 0.5rem 0.5rem 1.5rem !important;
+    }
+    .submenu {
+        border: none;
+        position: relative !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+        margin: 0;
+    }
+    .contact-top-div {
+        position: absolute;
+        top: 65px;
+        left: 50%;
+        background: #fff;
+        padding: 0.1rem 0.5rem;
+        border-radius: 1rem;
+        width: max-content;
+        transform: translate(-50%, 0);
+    }
+    .content .content-wrapper,
+    .footer-contact-form .content-wrapper,
+    .content-wrapper {
+        max-width: 100%;
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .mobile-menu-btn {
+        display: block;
+        height: 25px;
+        left: 20px;
+        margin: auto;
+        overflow: hidden;
+        position: absolute;
+        top: 14px;
+        width: 25px;
+        z-index: 100;
+        cursor: pointer;
+    }
+    .mobile-menu-btn div {
+        background: #158585;
+        height: 3px;
+        margin: auto;
+        transition: all 0.3s ease 0s;
+        width: 25px;
+    }
+    .mobile-menu-btn div:nth-of-type(1) {
+        position: absolute;
+        top: 3px;
+    }
+    .mobile-menu-btn div:nth-of-type(2) {
+        bottom: -50%;
+        opacity: 100;
+        position: absolute;
+        top: -50%;
+    }
+    .mobile-menu-btn div:nth-of-type(3) {
+        bottom: 3px;
+        position: absolute;
+    }
+    .mobile-menu-btn.active div:nth-of-type(1) {
+        position: absolute;
+        top: 10px;
+        transform: rotate(45deg);
+    }
+    .mobile-menu-btn.active div:nth-of-type(2) {
+        opacity: 0;
+    }
+    .mobile-menu-btn.active div:nth-of-type(3) {
+        bottom: 12px;
+        position: absolute;
+        transform: rotate(-45deg);
+    }
+    h3.title {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+    .footer-top .row>div {
+        margin-bottom: 20px;
+    }
+    .footer-top .row>div:last-child {
+        margin-bottom: 0;
+    }
+    .footer-menu {
+        display: none;
+    }
+    .copyright {
+        font-size: 0.86em;
+        text-align: center;
+        position: relative;
+        right: unset;
+        top: unset;
+    }
+    .desc-box {
+        width: 100%;
+        height: 100%;
+    }
+    .about-charlie-box,
+    .patient-info-box {
+        height: 200px;
+        background-size: cover;
+        background-position: center center;
+    }
+    .profile-list .content-wrapper,
+    header .content-wrapper {
+        padding: 0;
+        width: 100%;
+    }
+    .profile-list .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .profile-list .row>div {
+        padding: 0;
+    }
+    .banner {
+        height: 300px;
+    }
+    .banner-text {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .mobile-logo {
+        display: table;
+        margin: auto;
+    }
+    .logo {
+        display: none;
+    }
+    .language {
+        top: 15px;
+        right: 10px;
+        position: absolute;
+        color: #148585;
+    }
+    header {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .menu-top-container {
+        position: absolute;
+        bottom: unset;
+        top: 58px;
+        left: 0px;
+        right: 0px;
+    }
+    .menu-top-container ul {
+        flex-direction: column;
+        top: 0px;
+        position: absolute;
+        z-index: 1000;
+        padding: 0;
+        width: 100%;
+        box-shadow: 0;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+        transform: translateY(-50%) scaleY(0);
+        visibility: hidden;
+        transition: all 0.3s linear;
+    }
+    .menu-top-container ul.active {
+        transform: translateY(0) scaleY(1);
+        visibility: visible;
+    }
+    .menu-top-container ul li {
+        width: 100%;
+        background: #fafafa;
+    }
+    .menu-top-container ul a {
+        border-right: 0;
+        border-bottom: 1px solid #ddd !important;
+        width: 100%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 1.2em;
+        line-height: 1.25em;
+    }
+    footer .footer-bottom .content-wrapper {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .copyright span {
+        display: block;
+    }
+    .banner-text div,
+    .banner-text h3 {
+        font-size: 1.8em;
+        line-height: 1.25em;
+    }
+    .page-banner {
+        height: 135px;
+    }
+    .page-title {
+        font-size: 1.8em;
+    }
+    .about-page-box {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}

@@ -1,0 +1,329 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>劉兆麒 - 足病診療師</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link href="js/flexslider/flexslider.css" rel="stylesheet" type="text/css" />
+    <link href="css/animate.css" rel="stylesheet" type="text/css" />
+    <link href="css/charlie.css" rel="stylesheet" type="text/css" />
+    <link href="css/charlie-responsive.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet" />
+
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/flexslider/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="js/function.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#emailform').on('submit', function(e) {
+                e.preventDefault();
+                $('#emailform .loader-icon').addClass('active');
+                $('#emailform .mail-status').removeClass('active');
+                $.ajax({
+                    url: 'email.php',
+                    type: 'POST',
+                    data: new FormData(this),
+                    contentType: false,
+                    cache: false,
+                    processData: false,
+                    success: function(data) {
+                        $('#emailform .mail-status').html(data);
+                        $('#emailform .mail-status').addClass('active');
+                        $('#emailform .loader-icon').removeClass('active');
+                    },
+                    error: function() {},
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="content-wrapper">
+            <div class="mobile-menu-btn">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="logo">
+                <img src="img/logo-zh.png" />
+            </div>
+            <div class="mobile-logo">
+                <img src="img/mobile-logo-zh.png" />
+            </div>
+            <div class="menu-top-container">
+                <ul>
+                    <li><a href="index-zh.html">首頁</a></li>
+                    <li><a href="about-zh.html">關於Charlie</a></li>
+                    <li><a href="testimonials-zh.html">患者推薦</a></li>
+                    <li><a href="info-zh.html">診療資訊</a></li>
+                    <li><a href="services-zh.html">足病診療服務</a></li>
+                    <li class="position-relative">
+                        <a class="a-parent" href="devices-zh.html">治療儀器</a>
+                        <a href="javascript:void(0);" class="expand-menu-a"></a>
+                        <ul class="submenu" style="display: none">
+                            <li>
+                                <a href="devices-lunula-laser-zh.html"> 灰甲激光治療</a>
+                            </li>
+                            <li><a href="devices-zh.html">衝擊波治療</a></li>
+                            <li><a href="devices-zh.html">超聲波治療</a></li>
+                            <li><a href="devices-zh.html">干擾波電療</a></li>
+                            <li><a href="devices-zh.html">冷凍治療</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="contact-zh.html">聯絡我們</a></li>
+                </ul>
+            </div>
+            <div class="language">
+                <a href="index.html">ENG</a>
+            </div>
+            <div class="contact-top-div">致電: +852 3703-5860 / +852 6595-0118</div>
+        </div>
+    </header>
+    <div class="page-banner" style="background-image: url('img/page-banner2.jpg')">
+        <div class="content-wrapper">
+            <h1 class="page-title">聯絡我們</h1>
+        </div>
+    </div>
+    <div id="calendar" class="content grey-bg contact-calendar">
+        <div class="content-wrapper">
+            <div class="small-wrapper">
+                <!-- <h3 class="title">可預約日期表</h3> -->
+                <span>
+            請參考以下診所地址和診症時間預約，你亦可以聯絡我們盡早預約會面。
+          </span>
+                <!-- <img src="img/calendar201707.png" class="wow fadeIn"/>
+			<img src="img/calendar201708.png" class="wow fadeIn" /> -->
+            </div>
+        </div>
+    </div>
+    <div class="content grey-color-bg">
+        <div class="content-wrapper">
+            <div class="small-wrapper-2">
+                <div class="row">
+                    <div class="col-12 col-xl-4 col-lg-4 col-md-4 col-sm-12 wow fadeInUp">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.87736230052!2d114.1534022152611!3d22.282634949166148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3404007b4daffe6b%3A0x94ea8ccec6229414!2z5Y2h5L2b5aSn5buI!5e0!3m2!1szh-TW!2shk!4v1635605769739!5m2!1szh-TW!2shk"
+                            width="100%" height="300" frameborder="0" style="border: 0" allowfullscreen></iframe>
+                        <h4>Next Step Medical Clinic</h4>
+
+                        <div class="">
+                            星期一: 9:30 AM - 18:30 PM <br /> 星期二: 9:00 AM - 11:00 AM<br /> 星期三: 9:30 AM - 18:30 PM<br /> 星期四: 9:00 AM - 11:00 AM<br /> 星期五: 9:30 AM - 18:30 PM
+                        </div>
+                        <div class="address">
+                            香港中環皇后大道中 70 號卡佛大廈11樓1110室
+                        </div>
+                        <div class="email">
+                            <a href="mailto:info@nextstepmedic@gmail.com">nextstepmedic@gmail.com</a
+                >
+              </div>
+              <div class="phone">+852 3703-5860 / +852 65950118</div>
+
+              <div class="whatsapp">+852 65950118</div>
+            </div>
+            <div
+              class="col-12 col-xl-4 col-lg-4 col-md-4 col-sm-12 wow fadeInUp"
+            >
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.8783303745054!2d114.15403191495442!3d22.282598285332753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34040064ae73caf5%3A0x5b4229942867dfda!2z5Lit55Kw55qH5ZCO5aSn6YGT5LitMznomZ_osZDnm5vlibXlu7rlpKflu4g!5e0!3m2!1szh-TW!2shk!4v1635604073578!5m2!1szh-TW!2shk"
+                width="100%"
+                height="300"
+                frameborder="0"
+                style="border: 0"
+                allowfullscreen
+              ></iframe>
+              <h4>明德醫療中心(中環)</h4>
+              <div>
+                星期二: 12:00 PM - 17:00 PM <br />
+                星期四: 12:00 PM - 17:00 PM <br />
+                星期六: 9:00 AM - 1:00 PM
+              </div>
+              <div class="address">香港中環皇后大道中39號豐盛創建大廈3樓</div>
+              <div class="email">
+                <a href="mailto:mmc.central@matilda.org"
+                  >mmc.central@matilda.org</a
+                >
+              </div>
+              <div class="phone">+852 2537 8500</div>
+            </div>
+            <div
+              class="col-12 col-xl-4 col-lg-4 col-md-4 col-sm-12 wow fadeInUp"
+            >
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3692.4812714265913!2d114.14744891495391!3d22.259751985344614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340400092c6a4657%3A0x4e6444e28df38d70!2z5bGx6aCC5Yqg5YiX5bGx6YGTNDHomZ8!5e0!3m2!1szh-TW!2shk!4v1635607056866!5m2!1szh-TW!2shk"
+                width="100%"
+                height="300"
+                frameborder="0"
+                style="border: 0"
+                allowfullscreen
+              ></iframe>
+              <h4>明德國際醫院</h4>
+              <div>
+                星期二: 12:00 PM - 17:00 PM <br />
+                星期四: 12:00 PM - 17:00 PM <br />
+                星期六: 9:00 AM - 1:00 PM
+              </div>
+              <div class="address">香港山頂加列山道41號</div>
+              <div class="email">
+                <a href="mailto:info@matilda.org">info@matilda.org</a>
+                        </div>
+                        <div class="phone">+852 2849 0111</div>
+                    </div>
+                </div>
+                <hr />
+                <div class="wow fadeIn">
+                    <form method="post" id="emailform" action="email.php" data-toggle="validator" role="form">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                <div class="form-group">
+                                    <span class="your-name"><input
+                        type="text"
+                        name="your-name"
+                        value=""
+                        size="40"
+                        class="form-control"
+                        placeholder="名稱"
+                        required
+                    /></span>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                <div class="form-group">
+                                    <span class="your-telephone"><input
+                        type="text"
+                        name="your-telephone"
+                        value=""
+                        size="40"
+                        class="form-control"
+                        placeholder="電話"
+                        required
+                    /></span>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                <div class="form-group">
+                                    <span class="your-email"><input
+                        type="email"
+                        name="your-email"
+                        value=""
+                        size="40"
+                        class="form-control"
+                        placeholder="電郵"
+                    /></span>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                                <div class="form-group">
+                                    <span class="your-message">
+                      <textarea
+                        name="your-message"
+                        cols="40"
+                        rows="10"
+                        class="form-control"
+                        placeholder="留言"
+                      ></textarea>
+                    </span>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                                <button class="btn btn-danger">送出</button>
+                                <div class="loader-icon">
+                                    <img src="img/loading.gif" width="15" height="15" />&nbsp;傳送中...
+                                </div>
+                                <div class="mail-status"></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-top">
+            <div class="content-wrapper">
+                <div class="row">
+                    <!-- <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                        <h5 class="footer-title">聯絡我們</h5>
+                        請參考以下診所地址和診症時間預約，你亦可以聯絡我們盡早預約會面。
+                        <a href="contact-zh.html#calendar">
+                            <div class="footer-calendar">
+                                <i class="fas fa-calendar-alt"></i> 查看預約日期表
+                            </div>
+                        </a>
+                    </div> -->
+                    <div class="col-12 mb-4 footer-contact-txt">
+                        如果您想預約診療，請致電+852 3703-5860或Whatsapp +852 6595-0118聯繫我們。
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                        <h5 class="footer-title">Next Step Medical Clinic</h5>
+                        <div>
+                            星期一: 9:30 AM - 18:30 PM <br /> 星期二: 9:00 AM - 11:00 AM<br /> 星期三: 9:30 AM - 18:30 PM<br /> 星期四: 9:00 AM - 11:00 AM<br /> 星期五: 9:30 AM - 18:30 PM
+                        </div>
+                        <div class="address">
+                            香港中環皇后大道中 70 號卡佛大廈11樓1110室
+                        </div>
+                        <div class="email">
+                            <a href="mailto:nextstepmedic@gmail.com">nextstepmedic@gmail.com</a
+                >
+              </div>
+              <div class="phone">+852 3703-5860 / +852 65950118</div>
+              <div class="whatsapp">+852 65950118</div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+              <h5 class="footer-title">明德醫療中心(中環)</h5>
+              <div>
+                星期二: 12:00 PM - 17:00 PM <br />
+                星期四: 12:00 PM - 17:00 PM<br />
+                星期六: 9:00 AM - 1:00 PM
+              </div>
+              <div class="address">香港中環皇后大道中39號豐盛創建大廈3樓</div>
+              <!-- <div class="email">
+                <a href="mailto:mmc.central@matilda.org"
+                  >mmc.central@matilda.org</a
+                >
+              </div>
+              <div class="phone">+852 2537 8500</div> -->
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+              <h5 class="footer-title">明德國際醫院</h5>
+              <div>
+                星期二: 12:00 PM - 17:00 PM <br />
+                星期四: 12:00 PM - 17:00 PM<br />
+                星期六: 9:00 AM - 1:00 PM
+              </div>
+              <div class="address">香港山頂加列山道41號</div>
+              <!-- <div class="email">
+                <a href="mailto:info@matilda.org">info@matilda.org</a>
+                        </div>
+                        <div class="phone">+852 2849 0111</div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="content-wrapper">
+                <ul class="footer-menu">
+                    <li><a href="./index-zh.html">首頁</a></li>
+                    <li><a href="./about-zh.html">關於Charlie</a></li>
+                    <li><a href="./testimonials-zh.html">患者推薦</a></li>
+                    <li><a href="./info-zh.html">診療資訊</a></li>
+                    <li><a href="./services-zh.html">足病診療服務</a></li>
+                    <li><a href="./devices-zh.html">治療儀器</a></li>
+                    <li><a href="./contact-zh.html">聯絡我們</a></li>
+                </ul>
+                <div class="copyright">
+                    Copyright &copy; 2019 charlielaupodiatry.com.
+                    <span>All Rights Reserved.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
