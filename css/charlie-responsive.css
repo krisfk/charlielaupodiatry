@@ -6,6 +6,22 @@
 }
 
 @media (max-width: 991px) {
+    .expand-menu-a {
+        display: block !important;
+    }
+    .menu-top-container ul a.expand-menu-a {
+        border-bottom: none !important;
+    }
+    .submenu li a {
+        padding: 0.5rem 0.5rem 0.5rem 1.5rem !important;
+    }
+    .submenu {
+        border: none;
+        position: relative !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+        margin: 0;
+    }
     .contact-top-div {
         position: absolute;
         top: 65px;
@@ -167,7 +183,7 @@
     }
     .menu-top-container ul a {
         border-right: 0;
-        border-bottom: 1px solid #ddd;
+        border-bottom: 1px solid #ddd !important;
         width: 100%;
         padding-top: 15px;
         padding-bottom: 15px;
